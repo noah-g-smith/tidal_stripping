@@ -17,3 +17,5 @@ Run the plotting program with 'python3 plotS.py'.
 Create the movie with 'ffmpeg -framerate 25 -i plot_%04d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p movie.mp4'.
 
 Before running the program again first remove the data and plot files with 'rm data_* plot_*'.
+
+'movie.mp4' is an example video which uses the default values.
