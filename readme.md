@@ -14,7 +14,7 @@ The default values will give a stable orbit starting at periastron for the two g
 
 Run the plotting program with 'python3 plotS.py'.
 
-Create the movie with 'ffmpeg -framerate 25 -i plot_%04d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p movie.mp4'.
+Create the movie with 'ffmpeg -framerate 25 -i plots/plot_%04d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p movie.mp4'.
 
 Before running the program again first remove the data and plot files with 'rm data_* plot_*'.
 
