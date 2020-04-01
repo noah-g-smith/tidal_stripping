@@ -9,12 +9,12 @@ contains
     use utils, only:cross_product
     use poten, only:potential
     integer, intent(in) :: np
-    real, intent(in) :: x(3,np), v(3,np)
-    real, intent(in) :: m(np)
-    real, intent(inout) :: en
-    real, intent(inout) :: mom(3), angmom(3)
-    real :: ekin
-    real :: angi(3)
+    real(8), intent(in) :: x(3,np), v(3,np)
+    real(8), intent(in) :: m(np)
+    real(8), intent(inout) :: en
+    real(8), intent(inout) :: mom(3), angmom(3)
+    real(8) :: ekin
+    real(8) :: angi(3)
     integer :: i
 
     mom = 0.

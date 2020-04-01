@@ -4,8 +4,8 @@ import math
 from matplotlib import pyplot as plt
 import glob
 
-#k = 0
-data_files = sorted(glob.glob('data_*'))
+
+data_files = sorted(glob.glob('data/data_*'))
 i=0
 for file in data_files:
     if(i<1002):
@@ -32,16 +32,12 @@ for file in data_files:
          label=labels[3])
         plt.ylim(-90, 90)
         plt.xlim(-90, 90)
-        plt.legend(bbox_to_anchor=(0,1.02,1,0.2), borderaxespad=0, loc='lower left')
+        plt.legend(loc='upper left')
+        # plt.legend(bbox_to_anchor=(0,1.02,1,0.2), borderaxespad=0, loc='lower left')
         plt.xlabel('x')
         plt.ylabel('y')
-        plt.subplots_adjust(top=0.9)
-        plt.savefig('plot_' + '{:d}'.format(i).zfill(4) + '.png')
+        # plt.subplots_adjust(top=0.9)
+        plt.savefig('plots/plot_' + '{:d}'.format(i).zfill(4) + '.png')
         plt.close()
         del data
         i = i + 1
-
-    # testing
-    #k += 1
-    #if (k > 10):
-        #break
